@@ -10,21 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5876ed09-4762-4a37-b470-3401e22d42e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/domain/protocols/SynAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/factories/AccountControllersFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/util/CSVUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/util/NumberUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/AccountsDailySyncWorker-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/AccountsDailySyncWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/AccountsDailySyncWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/controllers/AccountsDailySyncController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/controllers/AccountsDailySyncController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/domain/models/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/domain/models/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/services/CSVLoadAccountsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/services/CSVLoadAccountsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/services/CSVUpdateAccountsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/services/CSVUpdateAccountsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/services/ReceitaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luisfdalmolin/accountsdailysyncworker/services/ReceitaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/AccountsDailySyncWorker-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bin/AccountsDailySyncWorker-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/luisfdalmolin/accountsdailysyncworker/services/ReceitaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/luisfdalmolin/accountsdailysyncworker/services/ReceitaServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
