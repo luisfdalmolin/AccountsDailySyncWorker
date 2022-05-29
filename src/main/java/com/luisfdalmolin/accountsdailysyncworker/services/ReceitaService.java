@@ -1,6 +1,7 @@
 package com.luisfdalmolin.accountsdailysyncworker.services;
 
 import com.luisfdalmolin.accountsdailysyncworker.domain.models.Account;
+import com.luisfdalmolin.accountsdailysyncworker.domain.protocols.SynAccount;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,34 +9,34 @@ import java.util.List;
 /**
  * @author gabriel_stabel<gabriel_stabel@sicredi.com.br>
  */
-public class ReceitaService {
+public class ReceitaService implements SynAccount {
 
-    public void atualizarConta(Account account) throws RuntimeException, InterruptedException {
+    @Override
+    public void sync(Account account) throws Exception {
         account.setIsUpdated(atualizarConta(account.getAgency(), account.getNumber(), account.getBalance(), account.getStatus()));
     }
 
     // Esta é a implementação interna do "servico" do banco central. Veja o código fonte abaixo para ver os formatos esperados pelo Banco Central neste cenário.
     private boolean atualizarConta(String agencia, String conta, double saldo, String status)
             throws RuntimeException, InterruptedException {
-		
-			
+
         // Formato agencia: 0000
         if (agencia == null || agencia.length() != 4) {
             return false;
         }
-        
+
         // Formato conta: 000000
         if (conta == null || conta.length() != 6) {
             return false;
         }
-        
+
         // Tipos de status validos:
         List tipos = new ArrayList();
         tipos.add("A");
         tipos.add("I");
         tipos.add("B");
-        tipos.add("P");                
-                
+        tipos.add("P");
+
         if (status == null || !tipos.contains(status)) {
             return false;
         }

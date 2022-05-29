@@ -2,11 +2,9 @@ package com.luisfdalmolin.accountsdailysyncworker.services;
 
 import com.luisfdalmolin.accountsdailysyncworker.domain.models.Account;
 import com.luisfdalmolin.accountsdailysyncworker.domain.protocols.UpdateAccounts;
+import com.luisfdalmolin.accountsdailysyncworker.util.CSVUtils;
 
 import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.List;
 
 public class CSVUpdateAccountsService implements UpdateAccounts {
@@ -20,14 +18,16 @@ public class CSVUpdateAccountsService implements UpdateAccounts {
           .append("conta").append(";")
           .append("saldo").append(";")
           .append("status").append(";")
-          .append("resultado").append(";\n");
+          .append("resultado")
+          .append(";").append(CSVUtils.CSV_LINE_ENDING_CHAR);
 
         accounts.forEach(a-> sb.append(a.getAgency()).append(";")
                                .append(a.getNumber()).append(";")
                                .append(a.getBalance()).append(";")
                                .append(a.getStatus()).append(";")
-                               .append(a.isUpdated() ? "SUCESSO" : "FALHA").append(";\n"));
+                               .append(a.isUpdated() ? "SUCESSO" : "FALHA")
+                               .append(";").append(CSVUtils.CSV_LINE_ENDING_CHAR));
 
-        Files.writeString(Paths.get(file.toURI()), sb, StandardOpenOption.APPEND);
+        CSVUtils.writeCSV(file, sb);
     }
 }
