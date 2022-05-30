@@ -7,7 +7,6 @@ import com.luisfdalmolin.accountsdailysyncworker.domain.protocols.UpdateAccounts
 
 import java.io.File;
 import java.util.List;
-import java.util.UUID;
 
 public class AccountsDailySyncController {
 
@@ -36,7 +35,7 @@ public class AccountsDailySyncController {
 
                 File resultFile = new File(System.getProperty("user.home")
                                            + File.separator
-                                           + "result-" + UUID.randomUUID() + ".csv");
+                                           + "result-" + System.currentTimeMillis() + ".csv");
 
                 if (resultFile.createNewFile()) {
                     updateAccounts.update(resultFile, accounts);
